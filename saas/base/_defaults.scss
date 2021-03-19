@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    padding: 15px 15px;
+    margin: 0 auto;
+    /* outline: 1px solid #FF6C00; */
+}
+
+header {
+    background-color:$white-color;
+    color: $dark-graphite-text;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border-bottom: 1px solid $light-grey-stroke;
+}
+
+.header__nav,
+.nav-list,
+.header__contacts,
+.contacts-list {
+    display: flex;
+}
+
+img {
+    display: block;
+}

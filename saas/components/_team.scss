@@ -1,0 +1,22 @@
+.team .container {
+    /* display: flex; */
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team {
+    
+    background-color: $light-grey-bg-team;
+
+
+    &__title {
+        margin-bottom:94px;
+        color: $dark-graphite-text;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}

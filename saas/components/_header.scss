@@ -1,0 +1,21 @@
+.header {
+    
+    justify-content: baseline;
+    
+    &__container {
+        display: flex;
+        justify-content: baseline; 
+        align-items:center;
+        max-height: 80px;
+    }
+    
+    &__nav {
+        margin-left: 93px;
+        margin-top: 32px;
+        margin-bottom:35px; 
+    }
+    
+    &__contacts {
+        margin-left:auto; 
+    }
+}

@@ -1,0 +1,126 @@
+.footer {
+    background-color: $graphite-bg;
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: left;
+    }
+
+    &__title {
+        margin-left: 93px;
+        margin-bottom: 20px;
+        color:$white-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.footer-form {
+    display:flex;
+
+    &__input {
+        margin-right: 12px;
+        padding-top:15px;
+        padding-bottom:15px;
+        padding-left: 16px;
+        background-color: $graphite-bg;
+        width:358px;
+        height:50px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: $light-grey-stroke;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid $grey-text;
+        border-radius: 4px;
+        outline:transparent;
+    }
+    
+    &__input:hover,
+    &__input:focus {
+        outline:transparent;
+    }
+    
+    &__block {
+        margin-left: 93px;
+        margin-right: auto;
+    }
+}
+
+
+.footer-button {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px 28.5px;
+    background-color: $blue-color;
+    outline:transparent;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: $white-color;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor:pointer;
+
+    &__icon {
+        margin-left: 10px;
+    }
+}
+
+.footer-address {
+    /* display: block; */
+    margin-top: 20px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    &__link.white {
+        color:$white-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+    
+    &__link {
+        color: $white-text-op60;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+.footer-links {
+    margin-left: 70px;
+
+    &__title {
+        align-items: baseline;
+        margin-bottom: 20px;
+        color:$white-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}
+
+

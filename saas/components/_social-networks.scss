@@ -1,0 +1,60 @@
+.social-networks {
+    display: flex;
+    justify-content:center;
+
+    &__link {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:16px;
+        width: 44px;
+        height: 44px;
+        color: $light-grey-icons;
+        border-radius: 50%;
+    
+        transition: color $transition-time; 
+    }
+    
+    &__icon {
+        fill:currentColor;  
+    }
+    
+    &__link:hover,
+    &__link:focus {
+    color:$white-color;
+    background-color: $blue-color;
+    border: 1px solid $blue-color;}
+    
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__item.footer {
+        display:flex;
+        justify-content: baseline;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        color: $light-grey-icons;
+        border-radius: 50%;
+    
+        transition: color $transition-time; 
+    }
+    
+    &__link.footer {
+        background-color: $white-text-op10;
+        display:flex;
+        justify-content: baseline;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        color: $white-color;
+        border-radius: 50%;
+    }
+    
+    &__link.footer:hover,
+    &__link.footer:focus {
+        color:$white-color;
+        background-color: $blue-color;
+    }
+}
