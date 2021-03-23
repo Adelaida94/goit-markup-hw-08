@@ -1,5 +1,12 @@
 .clients .container {
     align-items: center;
+
+    @media (max-width:480px) {
+        width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
 }
 
 .clients {
@@ -12,6 +19,19 @@
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
+
+        @media (max-width:480px) {
+            width:480px;
+            justify-content: center;
+            align-items: center;
+            padding-top:60px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
     }
 }
 
@@ -21,22 +41,47 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 94px;
-    margin-right: -30px;
-    margin-top: -30px;
+    margin-right: -15px;
+    margin-top: -15px;
+
+
+    @media (max-width:480px) {
+        max-width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-right: -15px;
+        margin-top: -15px;
+    }
 
     &__icon {
         align-items: center;
         justify-content: center;
         fill:$light-grey-icons;
+
+        
+    }
+
+    &__item:nth-child(2n+2) {
+        @media (max-width:480px) {
+            margin-left:30px;
+        }
     }
     
     &__item:not(:last-child) {
         margin-right: 30px;
+
+        @media (max-width:480px) {
+            margin-right:0;
+        }
     }
     
     &__icon:hover,
     &__icon:focus {
         fill: $blue-color;
+
     }
     
     &__link {
@@ -50,6 +95,16 @@
       
         border-radius: 4px;
         border: 1px solid $light-grey-icons;
+
+        @media (max-width:480px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:210px;
+            height:90px;
+
+        }
+       
     }
       
     &__icon {
@@ -60,6 +115,13 @@
     &__link:focus {
         color:$blue-color;
         border: 1px solid $blue-color;
+    }
+
+    &__item {
+        @media (max-width:480px) {
+            margin-bottom: 30px;
+            flex-basis: calc(100% / 2 - 15px);
+        }
     }
 
 }

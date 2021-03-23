@@ -49,7 +49,6 @@
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.03em;
-        
         }
 
     }
@@ -78,14 +77,12 @@
             align-items: center;
             margin-bottom: 30px;
             width:450px;
-            
-
         }
     }
     
     &__item {
         width: 270px;
-        height: 101px;
+        height: 100px;
 
         @media (max-width:480px) {
             display:block;
@@ -102,6 +99,7 @@
         @media (max-width:480px) {
             margin-left:15px;
             margin-right:15px;
+            margin-bottom: 90px;
         }
     }
 }

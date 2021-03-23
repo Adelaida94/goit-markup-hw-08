@@ -1,5 +1,9 @@
 .footer {
     background-color: $graphite-bg;
+    @media (max-width: 480px) {
+        width:480px;
+    }
+   
 
     &__container {
         display: flex;
@@ -7,6 +11,14 @@
         padding-top: 60px;
         padding-bottom: 60px;
         justify-content: left;
+
+        @media (max-width: 480px) {
+            max-width: 480px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__title {
@@ -19,11 +31,37 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
+
+        @media (max-width: 480px) {
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &__logo {
+        @media (max-width: 480px) {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
     }
 }
 
 .footer-form {
     display:flex;
+
+    @media (max-width: 480px) {
+        max-width: 480px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__input {
         margin-right: 12px;
@@ -42,6 +80,12 @@
         border: 1px solid $grey-text;
         border-radius: 4px;
         outline:transparent;
+
+        @media (max-width: 480px) {
+            width:450px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
     }
     
     &__input:hover,
@@ -52,9 +96,14 @@
     &__block {
         margin-left: 93px;
         margin-right: auto;
+
+
+        @media (max-width: 480px) {
+            margin-left: 0;
+        }
+
     }
 }
-
 
 .footer-button {
     display: inline-flex;
@@ -75,14 +124,30 @@
     letter-spacing: 0.06em;
     cursor:pointer;
 
+    @media (max-width: 480px) {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
     &__icon {
         margin-left: 10px;
     }
+
 }
 
 .footer-address {
     /* display: block; */
     margin-top: 20px;
+
+    @media (max-width: 480px) {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
 
     &__item:not(:last-child) {
         margin-bottom: 9px;
@@ -109,6 +174,12 @@
 .footer-links {
     margin-left: 70px;
 
+    @media (max-width: 480px) {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
     &__title {
         align-items: baseline;
         margin-bottom: 20px;
@@ -119,6 +190,13 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
+
+        @media (max-width: 480px) {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
     }
 
 }
