@@ -1,5 +1,9 @@
 .contacts-list {
-    
+    @media (max-width:480px) {
+        display:none;
+    }
+
+
     &__item:not(:first-child) {
         margin-left:30px;
         margin-right: 0;

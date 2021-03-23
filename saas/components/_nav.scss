@@ -1,4 +1,7 @@
 .nav-list {
+    @media (max-width:480px) {
+        display:none;
+    }
 
     &__link {
         color: $black-text;
