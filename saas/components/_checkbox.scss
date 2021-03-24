@@ -10,6 +10,8 @@
 
     font-family: 'Roboto', sans-serif;
 
+    
+
     &__input {
         margin-right: 8.38px;
         appearance: none;
@@ -45,7 +47,14 @@
         line-height: 24px;
         letter-spacing: 0.03em;
         font-family: 'Roboto', sans-serif;
-    
+       
+        @media (max-width:480px) {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.03em;
+            
+        }
     }
     
     &__link {

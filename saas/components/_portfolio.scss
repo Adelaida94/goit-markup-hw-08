@@ -3,6 +3,12 @@
     &__container {
         padding-top: 94px;
         padding-bottom: 94px;
+
+        @media (max-width:480px) {
+            max-width: 480px;;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
     }
 
     &__title {
@@ -15,25 +21,58 @@
         margin-right: 279px;
         margin-bottom: 50px;
         justify-content: center;
+
+        @media (max-width:480px) {
+            display:inline;
+            margin-left:15px;
+
+        }
     }
     
     &__btns a:nth-child(1) {
         margin-right: 8px;
         margin-left: 0;
+
+        @media (max-width:480px) {
+            margin-bottom: 15px;
+        }
+    }
+    
+    &__btns a:nth-child(2) {
+        @media (max-width:480px) {
+            margin-bottom: 15px;
+        }
     }
     
     &__btns a:nth-child(3) {
         margin-right: 8px;
         margin-left: 0;
+
+        @media (max-width:480px) {
+            margin-bottom: 15px;
+        }
     }
     
     
     &__btns a:nth-child(2n + 2) {
         margin-right: 8px;
         margin-left: 0;
+
+        @media (max-width:480px) {
+            margin-left: 0;
+        }
     }
     
+    &__btns a:nth-child(4) {
+        
+
+        @media (max-width:480px) {
+            margin-left: 15px;
+        }
+    }
+
     &__btn {
+        
         background-color: $light-grey-bg-team;
         padding: 6px 22px;
         color: $dark-graphite-text;
@@ -44,6 +83,11 @@
         height: 38px;
         width: auto;
         border-radius: 4px;
+
+        @media (max-width:480px) {
+            
+            
+        }
     }
     
     &__btn:hover,
@@ -66,6 +110,12 @@
     margin-top: -30px;
     margin-left: -30px;
 
+    @media (max-width:480px) {
+        display: block;   
+        justify-content: center;    
+        align-items: center;
+    }
+
     &__item {
         background-color: $white-color;
         outline: 1px solid $light-grey-stroke;
@@ -77,6 +127,7 @@
         position:relative;
     
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    
     }
     
     &__title {
@@ -128,6 +179,11 @@
       border-style: none;
       width: 368px;
       height: 294px;
+
+      @media (max-width:480px) {
+        width: 450px;
+        height: 294px;
+      }
     }
     
     &__link:hover .portfolio-list__overlay,
@@ -147,5 +203,12 @@
         font-family:'Roboto', sans-serif;
         top:63px;
         left:24px;
+    }
+
+    &__image {
+        @media (max-width:480px) {
+        width:450px;
+        height:294px;
+        }
     }
 }

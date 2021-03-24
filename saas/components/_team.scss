@@ -32,5 +32,11 @@
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
+
+        @media (max-width: 480px) {
+            margin-bottom:30px;
+        }
     }
+
+    
 }
