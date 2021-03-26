@@ -18,9 +18,14 @@ font-family: 'Roboto', sans-serif; -->
 
     <header class="header">
         <div class="container header__container">
-            <svg class="header__mobile" height="16" width="24">
-                <use href="./images/icons/symbol-defs.svg#icon-mobile-menu"></use>
-            </svg>
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="header__mobile" height="16" width="24">
+                    <use href="./images/icons/symbol-defs.svg#icon-mobile-menu"></use>
+                </svg>
+           </button>
             <a class="header__logo" href=""><span class="web">Web</span>Studio</a>
             <nav class="header__nav">
                 <ul class="nav-list">
@@ -143,7 +148,9 @@ font-family: 'Roboto', sans-serif; -->
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="workers-set">
                     <li class="workers-set__item">
-                        <img class="workers-set__photo" src="./images/team/ihor.jpg" alt="Photo Ihor" width="270">
+                        <img class="workers-set__photo" 
+                        srcset="./images/team/ihor.jpg 1x, ./images/team/ihor@2x.jpg 2x"
+                        src="./images/team/ihor.jpg" alt="Photo Ihor" width="270">
                         <div class="worker-profile">
                             <h3 class="worker-profile__name">Игорь Демьяненко</h3>
                             <p class="worker-profile__position">Product Designer</p>
@@ -181,7 +188,9 @@ font-family: 'Roboto', sans-serif; -->
                         
                     </li>
                     <li class="workers-set__item">
-                        <img class="workers-set__photo" src="./images/team/olha.jpg" alt="Photo Olha" width="270">
+                        <img class="workers-set__photo" 
+                        srcset="./images/team/olha.jpg 1x, ./images/team/olha@2x.jpg 2x"
+                        src="./images/team/olha.jpg" alt="Photo Olha" width="270">
                         <div class="worker-profile">
                             <h3 class="worker-profile__name">Ольга Репина</h3>
                             <p class="worker-profile__position">Frontend Developer</p>
@@ -218,7 +227,9 @@ font-family: 'Roboto', sans-serif; -->
                         </div>
                     </li>
                     <li class="workers-set__item">
-                        <img class="workers-set__photo" src="./images/team/nikol.jpg" alt="Photo Nikolai" width="270">
+                        <img class="workers-set__photo" 
+                        srcet="./images/team/nikol.jpg 1x, ./images/team/nikol@2x.jpg 2x"
+                        src="./images/team/nikol.jpg" alt="Photo Nikolai" width="270">
                         <div class="worker-profile">
                             <h3 class="worker-profile__name">Николай Тарасов</h3>
                             <p class="worker-profile__position">Marketing</p>
@@ -255,7 +266,9 @@ font-family: 'Roboto', sans-serif; -->
                         </div>
                     </li>
                     <li class="workers-set__item">
-                        <img class="workers-set__photo" src="./images/team/mikhail.jpg" alt="Photo Mikhail" width="270">
+                        <img class="workers-set__photo" 
+                        srcset="./images/team/mikhail.jpg 1x, ./images/team/mikhail@2x.jpg 2x"
+                        src="./images/team/mikhail.jpg" alt="Photo Mikhail" width="270">
                         <div class="worker-profile">
                             <h3 class="worker-profile__name">Михаил Ермаков</h3>
                             <p class="worker-profile__position">UI Designer</p>
@@ -478,8 +491,31 @@ font-family: 'Roboto', sans-serif; -->
 
     </div>
 
-
-
     <script src="./js/modal.js"></script>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40" >
+              <use href="./images/icons/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="" class="link">О нас</a></li>
+          <li><a href="" class="link">Работы</a></li>
+          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="" class="link">Карьера</a></li>
+        </ul>
+  </div>
+  
+  <!-- <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+    </script> -->
+ <script defer src="js/mobile-menu.js"></script>
+
+    
 </body>
 </html>
