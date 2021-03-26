@@ -3,6 +3,11 @@
         display:none;
     }
 
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+
+        display:flex;
+    }
+
     &__link {
         color: $black-text;
         font-weight: 500;

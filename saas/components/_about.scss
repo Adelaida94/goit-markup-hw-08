@@ -9,11 +9,21 @@
         padding-bottom: 30px;
     }
 
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        max-width:768px;
+    }
+
 }
 
 
 .about-thumb {
     position: relative;
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display:none;
+    }
     
 
     &__image {
@@ -74,6 +84,10 @@
      margin:0;
     }
 
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display:none;
+    }
+
     &__title {
         margin-bottom: 50px; 
         font-weight: 700;
@@ -84,6 +98,10 @@
         font-family: 'Roboto', sans-serif;
 
         @media (max-width: 480px) {
+            display:none;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
             display:none;
         }
     }

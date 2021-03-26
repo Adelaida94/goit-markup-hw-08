@@ -3,10 +3,21 @@
         display:none;
     }
 
+    @media (min-width: 481px) and (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
 
     &__item:not(:first-child) {
         margin-left:30px;
         margin-right: 0;
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            margin-left:0;
+            margin-top: 10px;
+        }
     }
     
     &__link {
@@ -23,8 +34,23 @@
         letter-spacing: 0.02em;
     
         transition: color $transition-time;
-    }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            justify-content: left;
+        }
     
+    }
+
+    
+    &__link:not(:last-child) {
+        @media (min-width: 481px) and (max-width: 768px) {
+            margin-top: 21px;
+            margin-bottom: 10px;
+        }
+    }
+
     &__icon {
         display: inline-block;
         align-items: center;

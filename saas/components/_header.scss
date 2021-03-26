@@ -10,32 +10,52 @@
         max-height: 80px;
 
         @media (min-width: 480px) {
-            width: 479px;
+            width: 480px;
         }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            width: 768px;
+            display:inline-flex;
+            justify-content: center;
+            
+        }
+
+        
     }
     
     &__nav {
 
-        
+        margin-left: 93px;
+        margin-top: 32px;
+        margin-bottom:35px; 
 
+        
         @media (min-width: 480px) {
             display: none;
 
         }  
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            display:flex;
+            margin-left: 88px;
+        }
   
-        margin-left: 93px;
-        margin-top: 32px;
-        margin-bottom:35px; 
+       
+    
     }
     
     &__contacts {
 
+        margin-left:auto; 
 
         @media (min-width: 480px) {
             display: none;
         }  
-
-        margin-left:auto; 
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            display:flex;
+            flex-direction: column;
+        }
+        
     }
 
     &__mobile {

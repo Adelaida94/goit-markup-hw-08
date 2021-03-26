@@ -11,6 +11,52 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    &__item {
+        width: 270px;
+        height: 100px;
+
+        @media (max-width:480px) {
+            display:flex;
+            flex-direction: column;
+            width:450px;
+            
+
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {}
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 354px;
+        height:251px;
+        margin:15px;
+        flex-basis: calc((100% - (2 * 30px)) / 2 );
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 30px;
+
+        @media (max-width:480px) {
+            margin-left:15px;
+            margin-right:15px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            margin:15px;
+        }
     }
 
     &__title {
@@ -44,11 +90,24 @@
         margin-bottom:94px;
 
         @media (max-width:480px) {
+            text-align: center;
             color: $grey-text;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.03em;
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            text-align: center;
+            color: $grey-text;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            margin-bottom: 0;
+            
         }
 
     }
@@ -77,29 +136,20 @@
             align-items: center;
             margin-bottom: 30px;
             width:450px;
+            height: 120px;
+            padding: 25px 190px 25px 190px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:354px;
+            height:120px;
+            padding: 25px 142px 25px 142px;
+            
         }
     }
     
-    &__item {
-        width: 270px;
-        height: 100px;
-
-        @media (max-width:480px) {
-            display:block;
-            margin-top: 60px;
-            margin-bottom: 60px;
-            width:450px;
-
-        }
-    }
     
-    &__item:not(:last-child) {
-        margin-right: 30px;
-
-        @media (max-width:480px) {
-            margin-left:15px;
-            margin-right:15px;
-            margin-bottom: 90px;
-        }
-    }
 }
