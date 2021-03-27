@@ -2777,64 +2777,6 @@ img {
   pointer-events: none;
 }
 
-/* /* .header a {
-    /* color: white-color; */
-/* color: inherit; */
-/* color: currentColor; */
-/* color: $white-text;
-/* }  */
-/* ----------------------H E A D E R---------------------- */
-/* L O G O */
-/* ----------------------H E R O---------------------- */
-/* ----------------------A B O U T p 1 ---------------------- */
-/* ----------------------A B O U T p 2 ---------------------- */
-/* ---------------------- T E A M ---------------------- */
-/* ----------------------C L I E N T S---------------------- */
-/* ----------------------F O O T E R---------------------- */
-/* ----------------------P O R T F O L I O---------------------- */
-/* portfolio__list a:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
-/* .portfolio__list li:hover,
-.portfolio__list li:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
-/* .pf-links:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
-} */
-/* .card-name-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-
-    background: $main-bg-color;
-    border: 1px solid $border-color-frame;
-    box-sizing: border-box;
-    display: flex;
-} */
-/* .pf-links:hover,
-.pf-links:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
-/* .pf-card::before {
-    content:"";
-    display: flex;
-    position:absolute;
-    height:294px;
-    width: 100%;
-    top:0;
-    background-color:$blue-color;
-    opacity: 0;
-   
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-/* .pf-images-overlay:hover {
-    display: inline-block;
-    position:absolute;
-    top: 50px;
-    left: 50px;
-    /* transform: translate (-50%, -50%); */
-/* width: 100%; */
 .menu-container {
   position: fixed;
   top: 0;
@@ -2969,4 +2911,63 @@ img {
 .mobile-social__item:first-child {
   padding-right: 10px;
 }
+
+/* /* .header a {
+    /* color: white-color; */
+/* color: inherit; */
+/* color: currentColor; */
+/* color: $white-text;
+/* }  */
+/* ----------------------H E A D E R---------------------- */
+/* L O G O */
+/* ----------------------H E R O---------------------- */
+/* ----------------------A B O U T p 1 ---------------------- */
+/* ----------------------A B O U T p 2 ---------------------- */
+/* ---------------------- T E A M ---------------------- */
+/* ----------------------C L I E N T S---------------------- */
+/* ----------------------F O O T E R---------------------- */
+/* ----------------------P O R T F O L I O---------------------- */
+/* portfolio__list a:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+/* .portfolio__list li:hover,
+.portfolio__list li:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+/* .pf-links:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+} */
+/* .card-name-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+
+    background: $main-bg-color;
+    border: 1px solid $border-color-frame;
+    box-sizing: border-box;
+    display: flex;
+} */
+/* .pf-links:hover,
+.pf-links:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+/* .pf-card::before {
+    content:"";
+    display: flex;
+    position:absolute;
+    height:294px;
+    width: 100%;
+    top:0;
+    background-color:$blue-color;
+    opacity: 0;
+   
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+/* .pf-images-overlay:hover {
+    display: inline-block;
+    position:absolute;
+    top: 50px;
+    left: 50px;
+    /* transform: translate (-50%, -50%); */
+/* width: 100%; */
 /*# sourceMappingURL=main.css.map */
