@@ -109,6 +109,144 @@
     /* width: 100%; */
 
 
+// M O B I L E ---------- M E N U ------------------------ //
+
+
+.menu-container {
+    position: fixed;
+    top:0;
+    left:0;
+    padding-top: 48px;
+    padding-left: 40px;
+    width:100vw;
+    height:100vh;
+    background-color: $white-color;
+    z-index:100;
+
+    transform:translateX(100%);
+    transition: transform $transition-time;
+}
+
+.menu-container.is-open {
+    transform:translateX(0);
+    transition: transform $transition-time;
+}
+
+.menu-toggle.js-close-menu {
+    fill:$dark-graphite-text;
+    background-color: transparent;
+    border:none;
+    outline:transparent;
+    position:absolute;
+    top:10px;
+    right:15px;
+    cursor:pointer;
+    
+}
+
+.menu-toggle.js-close-menu:hover,
+.menu-toggle.js-close-menu:focus {
+    fill:$blue-color;
+
+    transition: fill $transition-time;
+}
+
+.mobile-nav {
+    margin-bottom: 270px;
+    color:$dark-graphite-text;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mobile-nav__item {
+    margin-bottom: 32px;
+}
+
+.mobile-nav__link {
+    color:$dark-graphite-text;
+}
+
+.mobile-nav__link.current {
+    color:$blue-color;
+}
+
+.mobile-nav__link:hover,
+.mobile-nav__link:focus {
+    color:$blue-color;
+
+    transition: color $transition-time;
+} 
+
+.mobile-contacts {
+    color:$grey-text;
+    margin-bottom: 64px;
+}
+
+.mobile-contacts__item {
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__item:not(:last-child) {
+    
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mobile-contacts__item:not(:first-child) {
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mobile-contacts__link {
+    color:$grey-text;
+}
+
+.mobile-contacts__link:hover,
+.mobile-contacts__link:focus {
+    color:$blue-color;
+
+    transition: color $transition-time;
+} 
+
+
+.mobile-social {
+    display:flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mobile-social__link {
+    color: $blue-color;
+    
+    
+}
+
+
+.mobile-social__item:not(:first-child) {
+    border-left: 1px solid $light-grey-icons;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.mobile-social__item:first-child {
+    padding-right:10px;
+}
+
+
+
 
 
 

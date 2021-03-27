@@ -62,6 +62,8 @@
             right:22px;
             fill:$black-text;
             cursor:pointer;
+
+            
         }     
     }
 
@@ -172,17 +174,15 @@
         justify-content: left;
     }
 
-    @media (min-width: 769px) and (max-width: 1600px) {
-        display:flex;
-    }
+    
 
 
     &__item:not(:first-child) {
-        @media (min-width: 769px) and (max-width: 1600px) {
+        
         
         margin-left:30px;
         margin-right: 0;
-        }
+        
 
         @media (min-width: 481px) and (max-width: 768px) {
             margin-left:0;

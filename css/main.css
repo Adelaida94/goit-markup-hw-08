@@ -535,19 +535,9 @@ img {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1600px) {
-  .contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1600px) {
-  .contacts-list__item:not(:first-child) {
-    margin-left: 30px;
-    margin-right: 0;
-  }
+.contacts-list__item:not(:first-child) {
+  margin-left: 30px;
+  margin-right: 0;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -1281,7 +1271,6 @@ img {
 }
 
 .about-pictures {
-  margin-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -1350,7 +1339,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 94px;
   margin-left: 0;
   margin-right: 0;
   background: transparent;
@@ -1473,7 +1461,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-bottom: 94px;
 }
 
 @media (max-width: 480px) {
@@ -1627,6 +1614,12 @@ img {
 }
 
 @media (max-width: 480px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .team__title {
     margin-bottom: 30px;
   }
@@ -2842,4 +2835,138 @@ img {
     left: 50px;
     /* transform: translate (-50%, -50%); */
 /* width: 100%; */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-left: 40px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  z-index: 100;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle.js-close-menu {
+  fill: #212121;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-toggle.js-close-menu:hover,
+.menu-toggle.js-close-menu:focus {
+  fill: #2196F3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav {
+  margin-bottom: 270px;
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile-nav__item {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__link {
+  color: #212121;
+}
+
+.mobile-nav__link.current {
+  color: #2196F3;
+}
+
+.mobile-nav__link:hover,
+.mobile-nav__link:focus {
+  color: #2196F3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-contacts {
+  color: #757575;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile-contacts__item:not(:first-child) {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile-contacts__link {
+  color: #757575;
+}
+
+.mobile-contacts__link:hover,
+.mobile-contacts__link:focus {
+  color: #2196F3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile-social__link {
+  color: #2196F3;
+}
+
+.mobile-social__item:not(:first-child) {
+  border-left: 1px solid #AFB1B8;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mobile-social__item:first-child {
+  padding-right: 10px;
+}
 /*# sourceMappingURL=main.css.map */

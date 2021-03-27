@@ -1,7 +1,6 @@
 .features {
     display: flex;
     align-items: center;
-    margin-bottom: 94px;
     margin-left: 0;
     margin-right: 0;
     background: transparent;
@@ -87,7 +86,6 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        margin-bottom:94px;
 
         @media (max-width:480px) {
             text-align: center;
