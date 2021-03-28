@@ -8,14 +8,26 @@
     height:100vh;
     background-color: $white-color;
     z-index:100;
+    
 
     transform:translateX(100%);
     transition: transform $transition-time;
+
+    @media (min-width:481px) {
+        opacity:0;
+        transition: opacity $transition-time;
+    }
 }
 
 .menu-container.is-open {
     transform:translateX(0);
+    opacity:1;
     transition: transform $transition-time;
+
+    @media (min-width:481px) {
+        opacity:0;
+        transition: opacity $transition-time;
+    }
 }
 
 .menu-toggle.js-close-menu {
