@@ -19,6 +19,41 @@
     }
 }
 
+
+.menu-toggle.js-open-menu {
+    display:none;
+
+    @media (max-width: 480px) {
+        background-color: transparent;
+        display:flex;
+        position:absolute;
+        right:22px;
+        fill:$black-text;
+        cursor:pointer;
+        border:none;
+        outline: transparent;        
+    }     
+}
+
+.menu-toggle.js-open-menu:hover,
+.menu-toggle.js-open-menu:focus {
+       
+    display:none;
+
+    @media (max-width: 480px) {
+        display:flex;
+        position:absolute;
+        background-color: transparent;
+        right:22px;
+        fill:$blue-color;
+        cursor:pointer;
+        border:none;
+        outline: transparent; 
+
+        transition: fill $transition-time;
+    }     
+}
+
 .menu-container.is-open {
     transform:translateX(0);
     opacity:1;

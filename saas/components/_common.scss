@@ -53,35 +53,7 @@
         }
     }
 
-    &__mobile {
-    display:none;
-
-        @media (max-width: 480px) {
-            display:flex;
-            position:absolute;
-            right:22px;
-            fill:$black-text;
-            cursor:pointer;
-
-            
-        }     
-    }
-
-    &__mobile:hover,
-    &__mobile:focus {
-       
-        display:none;
     
-        @media (max-width: 480px) {
-            display:flex;
-            position:absolute;
-            right:22px;
-            fill:$blue-color;
-            cursor:pointer;
-
-            transition: fill $transition-time;
-        }     
-    }
 }
 
 
